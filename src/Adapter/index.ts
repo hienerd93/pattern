@@ -23,3 +23,8 @@ class Adapter extends Component {
     return `Adapter: (TRANSLATED) ${result}`;
   }
 }
+
+(function () {
+  const adapter = new Adapter(new uglyJSON());
+  console.log(adapter.render());
+})();

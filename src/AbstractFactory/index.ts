@@ -54,3 +54,10 @@ class WinCheckbox implements Checkbox {
     console.log("render WinCheckBox");
   }
 }
+
+(function () {
+  const factory = new MacFactory();
+  const macCheckbox = factory.createCheckbox();
+  const macButton = factory.createButton();
+  macCheckbox.paint();
+})();

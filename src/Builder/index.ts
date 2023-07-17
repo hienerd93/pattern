@@ -54,3 +54,11 @@ class Director {
     builder.setFooter();
   }
 }
+
+(function () {
+  const builder = new ModalBuilder();
+  const director = new Director();
+  director.buildMinimalModal(builder);
+  const minimalBuilder = builder.getModal();
+  minimalBuilder.listParts();
+})();

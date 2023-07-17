@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "factory": "tsc src/AbstractFactory/index.ts && node src/AbstractFactory/index.js",
+    "adapter": "tsc src/Adapter/index.ts && node src/Adapter/index.js",
+    "builder": "tsc src/Builder/index.ts && node src/Builder/index.js",
+    "observer": "tsc src/Observer/index.ts && node src/Observer/index.js",
+    "strategy": "tsc src/Strategy/index.ts && node src/Strategy/index.js"
   },
   "author": "",
   "license": "ISC",
